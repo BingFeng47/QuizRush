@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta charset="UTF-8" />
+    <title>Quiz Rush</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="form-body">
+    <div class="header-container">
+      <icon class="back-icon" id="backButton">Back</icon>
+      <h1>Create Question</h1>
+    </div>
+
+    <div class="form-container">
+      <form id="quizForm" onsubmit="return false;">
+
+        <div class="question-container">
+          <h3 for="question">Question:</h3>
+          <input type="text" id="question" name="question" required>
+        </div>
+
+        <div class="all-options-container">
+          <div class="options-container">
+            <h3 for="option1">Option 1:</h3>
+            <input type="text" id="option1" name="option1" required>
+          </div>
+        
+          <div class="options-container">
+            <h3 for="option2">Option 2:</h3>
+            <input type="text" id="option2" name="option2" required>
+          </div>
+        
+          <div class="options-container">
+            <h3 for="option3">Option 3:</h3>
+            <input type="text" id="option3" name="option3" required>
+          </div>
+        
+          <div class="options-container">
+            <h3 for="option4">Option 4:</h3>
+            <input type="text" id="option4" name="option4" required>
+          </div>
+        </div>
+        
+      
+        <div class="dropdown-container">
+          <h3 for="correctAnswer">Correct Answer:</h3>
+          <select id="correctAnswer" name="correctAnswer" required>
+            <option value="">Select correct answer</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+          </select>
+        </div>
+        
+        <button type="submit" id="submitButton">Submit</button>
+      </form>
+  </div>
+
+  <script type="application/javascript" src="script.js"></script>
+  </body>
+
+</html>
